@@ -1,6 +1,7 @@
 import { env, createMessageBatch } from "cloudflare:test";
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import worker, { type CloudflareEvent } from "../src/index";
+import worker from "../src/index";
+import type { CloudflareEvent } from "../src/types";
 import { extractBuildError } from "../src/helpers";
 
 // =============================================================================
